@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Andrew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Andrew"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Dmitry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Dmitry"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toRightOf="@id/Andrew"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Michal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Michal"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toRightOf="@id/Dmitry"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/green_grapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="green grapes"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Andrew" />
+
+    <EditText
+        android:id="@+id/purple_grapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/purple_grapes"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toRightOf="@id/green_grapes"
+        app:layout_constraintTop_toBottomOf="@id/Dmitry" />
+
+    <EditText
+        android:id="@+id/black_grapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/green_grapes"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toRightOf="@id/purple_grapes"
+        app:layout_constraintTop_toBottomOf="@id/Michal" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/purple_grapes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

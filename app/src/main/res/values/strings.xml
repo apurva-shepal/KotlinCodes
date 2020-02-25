@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">kotlin Heros practice 1</string>
+    <string name="purple_grapes">purple grapes</string>
+    <string name="green_grapes">green grapes</string>
+</resources>
